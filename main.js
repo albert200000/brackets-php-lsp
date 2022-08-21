@@ -109,7 +109,7 @@ define(function (require, exports, module) {
         FindReferencesManager.registerFindReferencesProvider(refProvider, ["php"], 0);
         FindReferencesManager.setMenuItemStateForLanguage();
         CodeInspection.register(["php"], {
-            name: "",
+            name: "php-lsp",
             scanFileAsync: lProvider.getInspectionResultsAsync.bind(lProvider)
         });
         //Attach plugin for Document Symbols
